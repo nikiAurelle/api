@@ -4,8 +4,11 @@ const express = require("express");
 const mongoose = require("mongoose");
 var hateoasLinker = require("express-hateoas-links");
 
-
+const cors = require('cors');
 const app = express();
+
+app.use(cors());
+ 
 
 // parse application/json
 app.use(express.json());  
